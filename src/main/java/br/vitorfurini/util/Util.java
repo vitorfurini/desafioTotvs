@@ -8,4 +8,5 @@ public class Util {
 
     public static final String PATH_IN = "\\dados\\in";
     public static final String PATH_OUT = "\\dados\\out";
+    public static final String SEPARADOR = ";";
 }

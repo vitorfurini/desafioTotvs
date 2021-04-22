@@ -1,6 +1,7 @@
 package br.vitorfurini.service;
 
 import br.vitorfurini.util.Util;
+import br.vitorfurini.validation.Validator;
 
 import java.io.File;
 
@@ -14,6 +15,8 @@ public class ReaderService {
     public static File[] getFiles() {
 
         File diretorio = new File(Util.PATH_IN);
+
+        Validator.validator(diretorio);
 
         return diretorio.listFiles();
 
